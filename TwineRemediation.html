@@ -65,153 +65,420 @@ var LZString={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234
 		<p id="init-lacking">Apologies! Your web browser lacks required capabilities. Please consider upgrading it or switching to a more modern web browser.</p>
 		<p id="init-loading">Initializing. Please wait&hellip;<br /><progress></progress></p>
 	</div>
-	<div id="store-area" hidden><tw-storydata name="WR 152 Remediation" startnode="1" creator="Twine" creator-version="2.3.5" ifid="00FF986C-9C48-4CB4-B358-0EB3091827F6" zoom="1" format="SugarCube" format-version="1.0.35" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction " tags="" position="129,2" size="100,100">Welcome!
-
-* introduce all characters
-
-* what will transpire in game
-
-* disclaimer, doesn&#39;t represent any of my beliegfs, but rather satirical response to the stereotypes I hear and/or have affected me.
-
-[[Character&#39;s Stories]]
-</tw-passagedata><tw-passagedata pid="2" name="Character&#39;s Stories" tags="" position="406,12" size="100,100">* talk about process thwt will happen
-* cannot go back and edit their professions
-* choose well
-
-First person [[Gabriana]] </tw-passagedata><tw-passagedata pid="3" name="Imani " tags="" position="882,186" size="100,100">* Her clues about her job, makes it seem like its a stereotypical black female job, like a secretary.</tw-passagedata><tw-passagedata pid="4" name="Gabriana" tags="" position="30,131" size="100,100">Job clues make it seem like her job is a secretary.
+	<div id="store-area" hidden><tw-storydata name="WR 152 Remediation" startnode="1" creator="Twine" creator-version="2.3.5" ifid="00FF986C-9C48-4CB4-B358-0EB3091827F6" zoom="1" format="SugarCube" format-version="1.0.35" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+@import url('https://fonts.googleapis.com/css2family=Muli:ital@1&display=swap');
 
 
+body {
+  
+  /* Set Background color */
+  	background-color: #FF00FF;
+  
+  /* Font properties  --> nice purple, grey, DECIDE LATER*/
+	font-size: 18px;
+  	font-family: 'Muli', sans-serif; 
+	
+  
+  /* Set Buttons 
+  
+  		/* if character presses links */
 
-Hear [[Rebecca]] next</tw-passagedata><tw-passagedata pid="5" name="Rebecca" tags="" position="121,246" size="100,100">Job clues make it seem like her job is a childcare worker.
+	/*	(set: 	$Engineer to false, 				/* Imani */
+	/*	  	  	$Secretary to false, 				 Brandon */
+	/*	  	  	$LabTech to false,					 Jennifer */
+	/*	  		$Landscaper to false,				 Daniel*/
+	/*	  		$Pilot to false, 					 Gabriana */
+	/*	  		$Nurse to false, 					 Myles */
+	/*	  		$Security to false, 				 Rebecca */
+	/*	  		$ChildCare to false)				 Luis */ 
+	
+/*making a button to show 8 professions on each character's page*/	
+		  /* way one: 	LINK PREPEND
+		  
+		  		<<linkprepend "Engineer" [transition|t8n]>> /*crossed out 						profession*/ Engineer <</linkprepend>> 
+	
+		/* way two: IF STATEMENTS
+		  		(link: "Engineer")[{
+			 	(set: $Engineer to true)
+				(if: $Engineer)
+		  		[(show: ?extra) ]}] */
+		  
+		 /* WAY THREE: MYO BUTTON 
+		  
+	}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction " tags="" position="68,1" size="100,100">Welcome to &quot;GAME TITLE&quot;!
 
-Hear [[Daniel]] next</tw-passagedata><tw-passagedata pid="6" name="jennifer" tags="" position="720,112" size="100,100">Job clues make it seem like her job is a nurse.
+What is your name? 
+&lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
 
-It&#39;s [[Brandon]] now!</tw-passagedata><tw-passagedata pid="7" name="Myles" tags="" position="330,270" size="100,100">Job clues make it seem like his job is a lab technician.
+In the first part of this game, your will meet eight characters of different races and genders, and they are going to tell you a little bit about their job. Your task is to match all of them to the profession that best matches the clues they will give you. 
 
-Pass the mic to [[Luis]] </tw-passagedata><tw-passagedata pid="8" name="Luis" tags="" position="466,134" size="100,100">Job clues make it seem like he job is a security worker.
+/* In part two, you will play through the character Imani, and you will have to choose how she reacts to various situations at her job. 
 
-Hear from [[jennifer]] next</tw-passagedata><tw-passagedata pid="9" name="Brandon" tags="" position="730,256" size="100,100">Job clues make it seem like he job is a pilot.
+
+* disclaimer, The stereotypes presented in this game do not represent any of my beliefs, but this game was created in a satirical response to the stereotypes I hear and/or have personally affected me.
+
+Let&#39;s jump in and hear the [[Characters&#39; Stories]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Characters&#39; Stories" tags="" position="404,11" size="100,100">You are about to start the first part of this game, where you will meet eight characters of different races and genders. 
+
+Before starting, you need to be aware of these simple rules:
+
+1 Match all of the characters to the profession that best matches the clues they will give you. 
+
+2 Choose the professions well and carefully! Once you choose a profession for a character, you cannot go back and change his or her profession. 
+
+
+
+Let&#39;s begin, the lovable [[Gabriana]] will go first. </tw-passagedata><tw-passagedata pid="3" name="Imani" tags="" position="719,129" size="100,100">/* Insert pic, black woman */
+
+/* Her clues about her job, makes it seem like its a stereotypical black female job, like a landscaper */
+
+Hello guys! My name is Imani, and I am 41 years old. 
+
+I am lucky to work with my family in our small company. The equipment we use on a typical day is very heavy, and moving it around can be a huge workout! Whatever our clients ask us ot do, we are able to do our service in about 1-2 hours. 
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+
+You will discover our real professions after talking to [[Brandon]].
+
+</tw-passagedata><tw-passagedata pid="4" name="Gabriana" tags="" position="1,134" size="100,100">
+/* insert Pic */
+
+Hola, my name is Gabriana! I am 35 years old, and I have worked in my profession since I was 20. 
+
+My workspace room is relatively small and sometimes crowded, but I enjoy working at my job! In a typical workday, one of my several duties is to make and receive several calls at work. My coworkers and I constantly listen to the radio. 
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+&lt;&lt;if radiobutton $Profession &quot;Engineer&quot; [checked]&gt;&gt;
+
+	&lt;&lt;set &quot;Engineer&quot; to &quot;==Engineer==&quot;&gt;&gt;
+
+&lt;&lt;/if&gt;&gt;
+
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+
+
+/* Maybe change this font?? */
+Hear [[Rebecca]] next</tw-passagedata><tw-passagedata pid="5" name="Rebecca" tags="" position="101,266" size="100,100">/* insert Pic */
+
+Hey /* insert player&#39;s name */!
+
+My name is Rebecca, and I am 19. I graduated from high school last year, and I started my current job this year. 
+
+One of my main jobs at work is to ensure that everyone stays safe. A lot of the people I monitor like to have lots of playful fun, but misbehaving will have no-no fun consequences.
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+
+Hear [[Daniel]] next</tw-passagedata><tw-passagedata pid="6" name="Jennifer" tags="" position="420,131" size="100,100">/* insert pic */
+
+/* Job clues make it seem like her job is a nurse.*/
+
+Greetings /* player name */ ! I am 27 years old, and I started working at my job when I got out of college. 
+
+I sometimes check in on patients and like to think of myself as the “backbone of the hospital”, but most in my work setting would disagree. I ensure that everyone is healthy. I work under the direction of the doctor. 
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+
+It&#39;s [[Luis]] now!</tw-passagedata><tw-passagedata pid="7" name="Myles" tags="" position="277,239" size="100,100">/* insert pic */
+
+/* Job clues make it seem like his job is a lab technician. */
+
+Hey what&#39;s up. I&#39;m Myles, and I am 26 years old. I started working at my job after I finished up some school and what not.
+
+Ask anyone you meet at my job, and they most likely would agree that others in my profession are the “unrecognized underdogs of the hospital”. If you allow me to conduct a few examinations and bring them to the lab, I can ensure your health. In my wing of the hospital, I occassionally see doctors, but not so often.
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+
+I&#39;ll pass the mic to [[Jennifer]] </tw-passagedata><tw-passagedata pid="8" name="Luis" tags="" position="569,132" size="100,100">/* insert pic */
+
+/*Job clues make it seem like he job is a security worker */
+
+Hi everyone, my name is Luis. The safety of my clients is my top priority. If they enjoy themselves too much and get too rowdy, I will have to shut them down. 
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+Listen to [[Imani]] next.</tw-passagedata><tw-passagedata pid="9" name="Brandon" tags="" position="846,239" size="100,100">
+/* Job clues make it seem like he job is a pilot */
+
+Howdy y&#39;all! I am Brandon and I have the best job, much better than yours. I love working my job, but being trapped in such a confined space can be very difficult sometimes. I listen and act on the important messages and calls I receive. The ladies love me
+
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
 
 
 Let&#39;s hear the true professions at the [[Big reveal]]
-</tw-passagedata><tw-passagedata pid="10" name="Daniel" tags="" position="245,143" size="100,100">Job clues make it seem like he job is an engineer.
+</tw-passagedata><tw-passagedata pid="10" name="Daniel" tags="" position="225,113" size="100,100">
+/* insert Pic */
 
-Wontcha listen to [[Myles]] now?</tw-passagedata><tw-passagedata pid="11" name="Big reveal" tags="" position="472,324" size="100,100">Reveal all of the character&#39;s jobs.
+Hello everyone, I am Daniel. 
+
+At my job, I operate fairly heavy machinery, and you can count on me to get the job done. 
+
+My profession is:
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Engineer&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Nurse&quot;&gt;&gt; Engineer&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; &quot;Lab Technician&quot;&gt;&gt; Lab Techinican&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Secretary&quot;&gt;&gt; Secretary&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Pilot&quot;&gt;&gt; Pilot&lt;/label&gt;
+* &lt;label&gt;&lt;&lt;radiobutton &quot;$Profession&quot; 		&quot;Landscaper&quot;&gt;&gt; Landscaper&lt;/label&gt;
+
+/* set code to say if &quot;x&quot; profession selected, then is inacitivated, and store answer. */
+
+
+Wontcha listen to [[Myles]] now?</tw-passagedata><tw-passagedata pid="11" name="Big reveal" tags="" position="501,237" size="100,100">Reveal all of the character&#39;s jobs.
 Click on characters to hear what they have to say about their job.
 
-[[Reveal: Imani ]] 
-[[Reveal: Gabriana]] 
-[[Reveal: Rebecca]] 
-[[Reveal: Jennifer]] 
-[[Reveal: Luis]] 
-[[Reveal: Brandon]] 
-[[Reveal: Daniel]] 
-[[Reveal: Myles]]
+[[Imani&#39;s Reveal]] 
+[[Gabriana&#39;s Reveal]] 
+[[Rebecca&#39;s Reveal]] 
+[[Jennifer&#39;s Reveal]] 
+[[Luis&#39; Reveal]] 
+[[Brandon&#39;s Reveal]] 
+[[Daniel&#39;s Reveal]] 
+[[Myles&#39; Reveal]]
 
-When done with all of themn or deisred ones, [[Play as Imani]] </tw-passagedata><tw-passagedata pid="12" name="Reveal: Imani " tags="" position="8,490" size="100,100">Her big reveal. Talks about her experiences at work, facing both sexism and racism.
+</tw-passagedata><tw-passagedata pid="12" name="Imani&#39;s Reveal" tags="" position="8,489" size="100,100">/* Insert Picture x2 get engineering firm photo*/
 
-* one of few women, one of few black women.
+/* Her big reveal. Talks about her experiences at work, facing both sexism and racism. */
 
-*vsexism --&gt; ppl dont assume that women are engineers or black ppl are engineers&#39;
+You were /* wrong or right code*/ ! My profession is a chemical engineer at my family&#39;s chemical engineering company, called ChemWorks. I typically use very heavy laboratory equipment to chemically engineer the various substances and products our clients ask for. The fastest we can make a product is in 1-2 hours.
 
-* make her intersectional --&gt; include backstory
+Based on my profession description earlier, many people like &quot;$name&quot; assume that I am a landscaper because I am black. I am assumed to have labor intensive jobs that are stereotypically for blacks, like a landscaper, construction worker, and more. Others assume me to have a job that is stereoptypcially for women, like a maid, secretary worker, or more.
 
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="13" name="Reveal: Gabriana" tags="" position="136,490" size="100,100">Her big reveal. Talks about her experiences at work, facing both sexism and racism.
-
-* one of few women, one of few hispanic women.
-
-* sexism --&gt; ppl dont assume that women are pilots or hispanic ppl are engineers&#39;
-
-* mention stereotypical jobs for hispanic women
-
-* intersectional
+When I worked at a different chemical engineering company, I would encounter both sexism and racism. This company, like most companies, was composed primarily of white men. They would assume that because I was black, I was an intern or a janitor, they would ignore my ideas at meetings, and they would consistently question my credibility. This occured because people usually do not beleive women or blacks to be in engineering, so being a black woman in this job is very challenging. However, I love my job and would not trade it for the world.
 
 
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="14" name="Reveal: Rebecca" tags="" position="260,493" size="100,100">Her big reveal. Talks about her experiences at work, facing sexism 
+Listen to hear [[Gabriana&#39;s Reveal]] to hear profession reveal.
+</tw-passagedata><tw-passagedata pid="13" name="Gabriana&#39;s Reveal" tags="" position="130,492" size="100,100">/* Insert Picture x2 get pilot photo*/
 
-* one of few women as a body guard.
+/* Her big reveal. Talks about her experiences at work, facing both sexism and racism. */
 
-* sexism --&gt; ppl dont assume that women are security guards
+You were /* wrong or right code*/ ! My profession is an airline pilot for a major Plane comapny. I have worked as a pilot since I received my airline pilot license at age 20. 
 
-* mention stereotypical jobs for white women
+My workspace room, the pilots&#39; cabin, is relatively small and sometimes crowded, but I enjoy working at my job! In a typical workday, I frequently make and receive several calls between various other airline flights. My coworkers and I constantly listen to the plane radio to communicate with other pilots.  
 
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am a secretary because I am hispanic. I am assumed to have a job that is stereotypically for hispanic women, like a maid, secretary, and more. Few would believe that a hispanic man would be a pilot, since the pilot profession is dominated by white men. furthermore, it is even less likely for a woman, especially a hispanic woman like myself to hold this profession. I am actually the only hispanic female pilot, one of six female pilots, and one of three hispanic pilots. 
 
-
-Back to [[Big reveal]]  
-</tw-passagedata><tw-passagedata pid="15" name="Reveal: Jennifer" tags="" position="380,495" size="100,100">Her big reveal. Talks about her experiences at work, facing both sexism and racism.
-
-* one of few women, one of many asian women.
-
-* sexism --&gt; ppl dont assume that most women can be lab technicians, many assume that she has that job bc she&#39;s asian.
-
-* lotta pressure on her
-
-* Most people think she&#39;s a nurse
-
-* mention stereotypical jobs for asian women
-
-* intersectional
+At my job, I encounter both sexism and racism. Most men in flight school were men, and I experienced their sexist and racist jokes. They would tell me that &quot;its much easier for a woman like me to be a secretary with my pretty face and assests&quot;. Despite all of this, I love my job and hope to inspire other young women of color to pursue it.
 
 
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="16" name="Reveal: Myles" tags="" position="498,495" size="100,100">His big reveal. Talks about his experiences at work, facing racism.
+Next, you can listen to [[Rebecca&#39;s Reveal]] 
 
-* stereotypically a &quot;woman&#39;s job&quot; people make fun of him for that
-__&gt; why is that funny?
+or 
 
-* sexism --&gt; ppl dont assume that men are nurses, think they should be doctors
-
-* one of few black people at his work, many dont acccept him being a nurse
-
-* mention stereotypical jobs for blakc men
+go Back to [[Big reveal]] 
+</tw-passagedata><tw-passagedata pid="14" name="Rebecca&#39;s Reveal" tags="" position="260,493" size="100,100">/* Her big reveal. Talks about her experiences at work, facing sexism */
 
 
+You were /* wrong or right code*/ ! My profession is a security guard at a major ______. I have worked as a security guard since after I gradutated high school last year and took a few classes. 
 
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="17" name="Reveal: Luis" tags="" position="614,497" size="100,100">His big reveal. Talks about his experiences at work, facing racism.
+One of my main jobs at work is to ensure that everyone stays safe. A lot of the people I monitor like to have lots of playful fun, but misbehaving will have no-no fun consequences. I am one of the only female security guards.   
 
-* stereotypically a &quot;woman&#39;s job&quot; people make fun of him for that
---&gt; why is that funny?
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am a childcare because I am younger white woman. I am assumed to have a job that is stereotypically for younger white women, like a maid, secretary, or others if it is not a childcare worker. Few would believe that a woman would be a security guard, since that profession is dominated by men, usually men of color. 
 
-* sexism --&gt; ppl dont assume that men are childcare workers, think they should be something manlier
+I do receive a lot of sexism remarks on a day to do basis. Many people do not take me seriously when I give them warnings, and many flirt with me. As if?! Despite those annoyances, I enjoy being a security guard.
 
-* one of few hispanic people at his work, many dont acccept him being in his profession  
-
-* mention stereotypical jobs for hispanic men
-
-
-
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="18" name="Reveal: Brandon" tags="" position="728,492" size="100,100">His big reveal. Talks about his experiences at work.
-
-* stereotypically a &quot;woman&#39;s job&quot; people make fun of him for that
-__&gt; why is that funny?
-
-* sexism --&gt; ppl dont assume that men are secretaries, think they should be the ones having secretaries
-
-* mention stereotypical jobs for white men --&gt; usually not this for white men
+You you can pay attention to [[Jennifer&#39;s Reveal]] 
+or
+Go back to [[Big reveal]]  
+</tw-passagedata><tw-passagedata pid="15" name="Jennifer&#39;s Reveal" tags="" position="378,495" size="100,100">
+/* Her big reveal. Talks about her experiences at work, facing sexism */
 
 
+You were /* wrong or right code*/ ! My profession is a lab technician at a local hospital. 
+
+I started working after I got out of college. I sometimes check in on patients and like to think of lab technicians like myself as the “backbone of the hospital”, but most in the hospital would disagree. I ensure that everyone is healthy through my lab tests. I work under the direction of the doctor, who will give me samples to examine. 
 
 
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="19" name="Reveal: Daniel" tags="" position="859,494" size="100,100">His big reveal. Talks about his experiences at work, facing racism.
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am a nurse because I am a woman. I am assumed to have a mathematic geared job that is stereotypically for asian women, like a bank teller, accountant, or others if it is not a nurse. Few would believe that a woman would be a lab technician, since that profession is dominated by men. 
 
-* stereotypically not an asian&#39;s job, people dont expect asians to be in this job. think they are actually in other jobs. 
+I do receive a lot of sexism remarks on a day to do basis. People do not assume that most women can be lab technicians. They believe that this profession is more men, and I must be a nurse or nurse assistant if I am a woman working in a hospital. Many assume that I only have this lab technician job as a woman only because I am asian. They put a lot of pressure on me because of my race and gender. Despite those annoyances, I enjoy working in the lab.
+
+Listen to [[Myles&#39; Reveal]] 
+or
+Go back to [[Big reveal]]  
+
+</tw-passagedata><tw-passagedata pid="16" name="Myles&#39; Reveal" tags="" position="503,495" size="100,100">/* Insert Picture x2 get hospital nurse photo*/
+
+/* His big reveal. Talks about his experiences at work, facing both sexism and racism. */
+
+
+You were /* wrong or right code*/ ! My profession is a nurse for a local hospital. I have worked as a nurse after graduating college last year.
+
+
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am a not a nurse because I am a man, and nurses are stereotypically for women. I am assumed to have a labor intensive job that is stereotypically for black men, like a driver, landscaper, and more. Few could not believe that a black man would be a nurse, since the pilot profession is dominated by white women. Furthermore, it is even less likely for a man, especially a blakc man like myself to hold this profession. I am actually the only black male nurses, one of a few male nurses, and one of three black nurses. 
+
+At my job, I encounter both sexism and racism. Doctors and others in the hospital will ridicule me for having a &quot;woman&#39;s job&quot;, or tell me to go clean with the janitors. However, I love going to hte hospital and defying the odds everyday. 
+
+
+Next, you can listen to [[Luis&#39; Reveal]] 
+
+or 
+
+go Back to [[Big reveal]] 
+
+</tw-passagedata><tw-passagedata pid="17" name="Luis&#39; Reveal" tags="" position="614,497" size="100,100">
+
+/* Insert Picture x2 get child day care photo*/
+
+/* His big reveal. Talks about his experiences at work, facing both sexism and racism. */
+
+
+You were /* wrong or right code*/ ! I am a childcare worker a rich daycare center for children. 
+
+The safety of my &quot;children clients&quot; is my top priority. If they enjoy themselves too much and get too rowdy, I will have to shut them down - nicely of course! 
+
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am a security guard. I am assumed to have a labor intensive job that is stereotypically for hispanic men, like a  landscaper, construction worker and more. Few could not believe that a man would be a childcare worker, since that profession is dominated by white women. Furthermore, it is even less likely for a hispanic man like myself to hold this profession. I am actually the only hispanic person and man working at the day care center.
+
+At my job, I encounter both sexism and racism. Parents will ridicule me for having a &quot;woman&#39;s job&quot;, or tell me to go get a manlier job. Some tell me I am dangerous around the kids. I constantly ignore these microagressions, and I love working at my job.
+
+
+Next, you can listen to [[Brandon&#39;s Reveal]] 
+
+or 
+
+go Back to [[Big reveal]] 
+
+</tw-passagedata><tw-passagedata pid="18" name="Brandon&#39;s Reveal" tags="" position="740,495" size="100,100">
+/* Insert picture, one of business office */
+
+/* His big reveal. Talks about his experiences at work, facing sexism */
+
+
+You were /* wrong or right code*/ ! My profession is a secretary at a major ______ company. 
+
+I love working my job, but being trapped in such a confined office space can be very difficult sometimes. I listen and act on the important messages and calls I receive from clients and other workers in the office. 
+
+
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am a pilot because I a white man. I am assumed to have a stereotypical job for white men, like a pilot, a lawyer, white-collar jobs, and prestige jobs in general. Few would believe that a woman would be a security guard, since that profession is dominated by men, usually men of color. 
+
+I do receive a lot of sexist remarks on a day to do basis. Many people do not take me seriously when I answer the phone, and believe that I have a woman&#39;s job. However, I don&#39;t pay any attention to their ignorance, and I enjoy being a secretary.
+
+You you can pay attention to [[Daniel&#39;s Reveal]] 
+
+or
+
+Go back to [[Big reveal]]  
+
+
+
+
+Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="19" name="Daniel&#39;s Reveal" tags="" position="859,494" size="100,100">His big reveal. Talks about his experiences at work, facing racism. 
 
 *sexism --&gt; ppl dont assume that asian men do hands on labour intensive jobs, think they should be more technicial
 
 * pressure they get
 
-* one of few black people at his work, many dont think he&#39;ll do as good of a job bc hes not the stereotypical blakc or hispanic landscaper.
+* one of few asian people at his work, many dont think he&#39;ll do as good of a job bc hes not the stereotypical blakc or hispanic landscaper.
 
 * mention stereotypical jobs for asian men
 
 
 
-Back to [[Big reveal]]  </tw-passagedata><tw-passagedata pid="20" name="Play as Imani" tags="" position="446,624" size="100,100">Now the players can play as Imani
+/* Insert picture, one of business office */
+
+/* His big reveal. Talks about his experiences at work, facing sexism */
+
+
+You were /* wrong or right code*/ ! My profession is a landscaper. 
+
+
+As a landscaper, I operate with fairly heavy landscaping machinery, and you can count on me to do a great job landscaping your yards. 
+
+
+Based on my profession description earlier, many people /* insert LIKE YOU if chosen */ assume that I am an engineer because I am asian. I am assumed to have a job stereotypically for asian men, like an engineer, a doctor, and technicial jobs in general. Few would believe that a man like me would be a lanscaper, since that profession is dominated by men of color, like blacks and hispanics for example.  
+
+I do receive a lot of racist remarks at work. Many people do not take me seriously at work. They don&#39;t expect myself and other asians to be as good at this job, because it very rare to see us in this profession. Either way, racism or not I enjoy my landscaping job.
+
+
+Go back to [[Big reveal]]  
+
+Read the [[Final Remarks]]
+
+</tw-passagedata><tw-passagedata pid="20" name="Play as Imani" tags="" position="455,630" size="100,100">/* Now the players can play as Imani
 
 Introduction
 *all bout her
 * make her intersectional
 
-[[Situation 1]] </tw-passagedata><tw-passagedata pid="21" name="Asking for a raise" tags="" position="879,785" size="100,100">no raise, not as valuable as other male engineers or asian engineers
+[[Situation 1]] */</tw-passagedata><tw-passagedata pid="21" name="Asking for a raise" tags="" position="879,785" size="100,100">no raise, not as valuable as other male engineers or asian engineers
 
 * asian workers on other side of hte globe
 
@@ -237,11 +504,40 @@ Superscript	meters/second^^2^^	meters/second2	meters/second&lt;sup&gt;2&lt;/sup&
 Monospace	{{{a //word//}}}	a //word//		&lt;code&gt;a //word//&lt;/code&gt;
 Comment			/%a comment%/		
 Error			@@error@@		error			error
-Inline styling	@@font-weight:bold;text@@	text	text</tw-passagedata><tw-passagedata pid="27" name="Fin" tags="" position="425,962" size="100,100">* Thank yaaaa
+Inline styling	@@font-weight:bold;text@@	text	text
+
+#passage{/* Your CSS Here */}
+
+/* if character presses links */
+
+(set: &quot;Engineer&quot; to false, $linkB to false, $linkC to false)
+(link: &quot;ProfClicked&quot;)[{
+	(set: $eng to true)
+	(if: $eng)[
+		(show: ?extra)
+	]
+}]
+
+
+
+
+
+</tw-passagedata><tw-passagedata pid="27" name="Fin" tags="" position="425,962" size="100,100">* Thank yaaaa
 
 * Goal of the Game restated
 
-* Hope you enjoyed!!!!!!</tw-passagedata></tw-storydata></div>
+* Hope you enjoyed!!!!!!</tw-passagedata><tw-passagedata pid="28" name="Final Remarks" tags="" position="678,624" size="100,100">Thank you for playing through the game!
+
+
+We hope that you enjoyed the game and hopefully learned how your personal or other stereotypes of a certain group affect how you view them and what professions you believe they would hold. 
+
+
+You cannot use one&#39;s race or gender to determine what his or her profession. FUrthermore, you cannot use those characteristics to determine one&#39;s personality traits, fitness levels, or ANYTHING. 
+
+The creator of this game encourage you to try living by these rules. Get to know people better before making decisions about them. You truly do not know someone until you get to sit down and get to know them. 
+
+Thank you for taking hte time to play __________. Be kind. To everyone.
+</tw-passagedata></tw-storydata></div>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS
 
